@@ -38,7 +38,7 @@ sudo pacman -S arcolinux-lightdm-gtk-greeter --noconfirm --needed
 #sudo pacman -S arcolinux-lightdm-gtk-greeter-plasma --noconfirm --needed
 sudo pacman -S arcolinux-lightdm-gtk-greeter-settings --noconfirm --needed
 #sudo pacman -S arcolinux-local-applications-git --noconfirm --needed
-#sudo pacman -S arcolinux-local-xfce4-git --noconfirm --needed
+sudo pacman -S arcolinux-local-xfce4-git --noconfirm --needed
 #sudo pacman -S arcolinux-logo-git --noconfirm --needed
 #sudo pacman -S arcolinux-lxqt-applications-add-git --noconfirm --needed
 #sudo pacman -S arcolinux-lxqt-applications-hide-git --noconfirm --needed
