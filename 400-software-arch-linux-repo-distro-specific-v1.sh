@@ -42,6 +42,7 @@ echo "Installing category Other"
 
 echo "Installing category System"
 
+sudo pacman -S --noconfirm --needed betterlockscreen
 sudo pacman -S --noconfirm --needed dmenu
 sudo pacman -S --noconfirm --needed imagemagick
 sudo pacman -S --noconfirm --needed w3m
