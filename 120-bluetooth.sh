@@ -46,20 +46,11 @@ func_install() {
 echo "Installation of sound software packages"
 
 list=(
-pulseaudio
-pulseaudio-alsa
-pavucontrol
-alsa-firmware
-alsa-lib
-alsa-plugins
-alsa-utils
-gstreamer
-gst-plugins-good
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-ugly
-playerctl
-volumeicon
+pulseaudio-bluetooth
+bluez
+bluez-libs
+bluez-utils
+blueberry
 )
 
 count=0
@@ -69,6 +60,15 @@ for name in "${list[@]}" ; do
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
+
+tput setaf 5;echo "################################################################"
+echo "Enabling services"
+echo "################################################################"
+echo;tput sgr0
+
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+sudo sed -i 's/'#AutoEnable=false'/'AutoEnable=true'/g' /etc/bluetooth/main.conf
 
 tput setaf 11;
 echo "################################################################"
