@@ -104,7 +104,7 @@ done
 list=(
 chromium
 firefox
-qbittorent
+qbittorrent
 )
 
 count=0
@@ -119,7 +119,7 @@ done
 ###############################################################################
 
 list=(
-simplscreenrecorder
+simplescreenrecorder
 vlc
 )
 
