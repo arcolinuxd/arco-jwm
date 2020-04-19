@@ -15,6 +15,7 @@ We give you scripts to install this desktop.
 Change the scripts to give it a personal touch.
 
 Delete the applications you do not want.
+
 Add the applications you do want.
 
 And then run the scripts.
