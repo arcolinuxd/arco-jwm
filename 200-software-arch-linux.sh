@@ -52,14 +52,14 @@ func_category() {
 
 ###############################################################################
 
+func_category Accessories
+
 list=(
 plank
 variety
 )
 
 count=0
-func_category Accessories
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -67,6 +67,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category Development
 
 list=(
 atom
@@ -75,8 +77,6 @@ sublime-text-dev
 )
 
 count=0
-func_category Development
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -84,6 +84,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category Graphics
 
 list=(
 gimp
@@ -92,8 +94,6 @@ nomacs
 )
 
 count=0
-func_category Graphics
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -101,6 +101,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category Graphics
 
 list=(
 chromium
@@ -108,8 +110,6 @@ qbittorrent
 )
 
 count=0
-func_category Graphics
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -117,6 +117,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category Multimedia
 
 list=(
 simplescreenrecorder
@@ -124,8 +126,6 @@ vlc
 )
 
 count=0
-func_category Multimedia
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -133,14 +133,14 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category Office
 
 list=(
 evince
 )
 
 count=0
-func_category Office
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -148,6 +148,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category System
 
 list=(
 accountsservice
@@ -156,8 +158,6 @@ scrot
 )
 
 count=0
-func_category System
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -165,6 +165,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category Unpack
 
 list=(
 unace
@@ -179,8 +181,6 @@ file-roller
 )
 
 count=0
-func_category Unpack
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;

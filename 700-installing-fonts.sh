@@ -52,6 +52,8 @@ func_category() {
 
 ###############################################################################
 
+func_category Fonts
+
 list=(
 arcolinux-fonts-git
 adobe-source-sans-pro-fonts
@@ -69,8 +71,6 @@ tamsyn-font
 )
 
 count=0
-func_category Fonts
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;

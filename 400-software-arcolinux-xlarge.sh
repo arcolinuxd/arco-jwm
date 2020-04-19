@@ -52,13 +52,13 @@ func_category() {
 
 ###############################################################################
 
+func_category Any_software_from_arcolinux_xlarge_repository
+
 list=(
 gitahead
 )
 
 count=0
-func_category Any_software_from_arcolinux_xlarge_repository
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;

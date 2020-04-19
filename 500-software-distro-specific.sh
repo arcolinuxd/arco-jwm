@@ -52,6 +52,8 @@ func_category() {
 
 ###############################################################################
 
+func_category Additional-distro-specific
+
 list=(
 gtk-engine-murrine
 dmenu
@@ -62,8 +64,6 @@ hardcode-fixer-git
 )
 
 count=0
-func_category Additional-distro-specific
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;

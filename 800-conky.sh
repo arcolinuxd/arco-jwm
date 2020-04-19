@@ -52,6 +52,8 @@ func_category() {
 
 ###############################################################################
 
+func_category Conky
+
 list=(
 conky-lua-archers
 arcolinux-conky-collection-git
@@ -62,8 +64,6 @@ libpulse
 )
 
 count=0
-func_category Conky
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;

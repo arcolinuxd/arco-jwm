@@ -52,13 +52,13 @@ func_category() {
 
 ###############################################################################
 
+func_category Accessories
+
 list=(
 mintstick-git
 )
 
 count=0
-func_category Accessories
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
@@ -66,6 +66,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category Multimedia
 
 list=(
 peek
@@ -73,7 +75,6 @@ radiotray
 )
 
 count=0
-func_category Multimedia
 
 for name in "${list[@]}" ; do
 	count=$[count+1]
@@ -82,6 +83,8 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
+
+func_category System
 
 list=(
 downgrade
@@ -90,8 +93,6 @@ pamac-aur
 )
 
 count=0
-func_category System
-
 for name in "${list[@]}" ; do
 	count=$[count+1]
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
