@@ -9,11 +9,11 @@
 # Website	:	https://www.arcolinuxb.com
 # Website	:	https://www.arcolinuxiso.com
 # Website	:	https://www.arcolinuxforum.com
-##################################################################################################################
+###############################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
-##################################################################################################################
+###############################################################################
 
 
 ###############################################################################
@@ -32,7 +32,7 @@ func_install() {
       	echo
 		tput sgr0
 	else
-    	tput setaf 4
+    	tput setaf 3
     	echo "###############################################################################"
     	echo "##################  Installing package "  $1
     	echo "###############################################################################"
@@ -46,20 +46,20 @@ func_install() {
 echo "Installation of sound software packages"
 
 list=(
-pulseaudio 
-pulseaudio-alsa 
-pavucontrol  
-alsa-firmware 
-alsa-lib 
+pulseaudio
+pulseaudio-alsa
+pavucontrol
+alsa-firmware
+alsa-lib
 alsa-plugins
-alsa-utils 
-gstreamer 
-gst-plugins-good 
-gst-plugins-bad 
-gst-plugins-base 
-gst-plugins-ugly 
+alsa-utils
+gstreamer
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-ugly
 playerctl
-volumeicon 
+volumeicon
 )
 
 count=0
@@ -76,16 +76,8 @@ echo "################################################################"
 echo;tput sgr0
 cp -rT /etc/skel ~
 
-tput setaf 5;echo "################################################################"
-echo "Enabling lightdm as display manager"
+tput setaf 11;
+echo "################################################################"
+echo "Software has been installed"
 echo "################################################################"
 echo;tput sgr0
-sudo systemctl enable lightdm.service -f
-
-tput setaf 7;echo "################################################################"
-echo "You now have a very minimal functional desktop"
-echo "################################################################"
-echo;tput sgr0
-echo "################################################################"
-echo "Reboot your system"
-echo "################################################################"
