@@ -58,6 +58,12 @@ for name in "${list[@]}" ; do
 	func_install $name
 done
 
+tput setaf 5;echo "################################################################"
+echo "Getting the ArcoLinux Samba config"
+echo "################################################################"
+echo;tput sgr0
+
+sudo cp /etc/samba/smb.conf.arcolinux /etc/samba/smb.conf
 
 tput setaf 5;echo "################################################################"
 echo "Give your username for samba"
@@ -66,13 +72,6 @@ echo;tput sgr0
 
 read -p "What is your login? It will be used to add this user to smb : " choice
 sudo smbpasswd -a $choice
-
-tput setaf 5;echo "################################################################"
-echo "Getting the ArcoLinux Samba config"
-echo "################################################################"
-echo;tput sgr0
-
-sudo cp /etc/samba/smb.conf.arcolinux /etc/samba/smb.conf
 
 tput setaf 5;echo "################################################################"
 echo "Enabling services"
