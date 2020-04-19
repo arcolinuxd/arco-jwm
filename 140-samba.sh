@@ -72,7 +72,7 @@ echo "Getting the ArcoLinux Samba config"
 echo "################################################################"
 echo;tput sgr0
 
-cp /etc/samba/smb.conf.arcolinux /etc/samba/smb.conf
+sudo cp /etc/samba/smb.conf.arcolinux /etc/samba/smb.conf
 
 tput setaf 5;echo "################################################################"
 echo "Enabling services"
@@ -80,9 +80,7 @@ echo "################################################################"
 echo;tput sgr0
 
 sudo systemctl enable smb.service
-sudo systemctl start smb.service
 sudo systemctl enable nmb.service
-sudo systemctl start nmb.service
 
 tput setaf 11;
 echo "################################################################"
