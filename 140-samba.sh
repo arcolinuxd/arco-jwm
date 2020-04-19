@@ -43,7 +43,7 @@ func_install() {
 }
 
 
-echo "Installation of printer software"
+echo "Installation of samba software"
 
 list=(
 samba

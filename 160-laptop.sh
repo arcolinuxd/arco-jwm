@@ -43,12 +43,10 @@ func_install() {
 }
 
 
-echo "Installation of network software"
+echo "Installation of laptop software"
 
 list=(
-avahi
-nss-mdns
-gvfs-smb
+tlp
 )
 
 count=0
@@ -60,25 +58,11 @@ for name in "${list[@]}" ; do
 done
 
 tput setaf 5;echo "################################################################"
-echo "Change nsswitch.conf for access to nas servers"
-echo "################################################################"
-echo;tput sgr0
-
-#hosts: files mymachines myhostname resolve [!UNAVAIL=return] dns
-#ArcoLinux line
-#hosts: files mymachines resolve [!UNAVAIL=return] mdns dns wins myhostname
-
-#first part
-sudo sed -i 's/files mymachines myhostname/files mymachines/g' /etc/nsswitch.conf
-#last part
-sudo sed -i 's/\[\!UNAVAIL=return\] dns/\[\!UNAVAIL=return\] mdns dns wins myhostname/g' /etc/nsswitch.conf
-
-tput setaf 5;echo "################################################################"
 echo "Enabling services"
 echo "################################################################"
 echo;tput sgr0
 
-sudo systemctl enable avahi-daemon.service
+sudo systemctl enable tlp.service
 
 tput setaf 11;
 echo "################################################################"
