@@ -58,10 +58,10 @@ variety
 )
 
 count=0
+func_category Accessories
 
 for name in "${list[@]}" ; do
 	count=$[count+1]
-	func_category Accessories
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
