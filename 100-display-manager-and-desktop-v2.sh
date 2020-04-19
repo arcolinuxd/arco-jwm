@@ -31,7 +31,7 @@ func_install() {
       	echo
 		tput sgr0
 	else
-    	tput setaf 4
+    	tput setaf 1
     	echo "###############################################################################"
     	echo "##################  Installing package "  $1
     	echo "###############################################################################"
@@ -62,7 +62,7 @@ count=0
 
 for name in "${list[@]}" ; do
 	count=$[count+1]
-	tput setaf 1;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
 
