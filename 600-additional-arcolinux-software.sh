@@ -58,26 +58,14 @@ arcolinux-bin-git
 arcolinux-cron-git
 arcolinux-hblock-git
 arcolinux-kvantum-git
-arcolinux-lightdm-gtk-greeter
-arcolinux-lightdm-gtk-greeter-settings
 arcolinux-local-xfce4-git
-arcolinux-local-xfce4-git
-arcolinux-logout-git
-arcolinux-mirrorlist-git
-arcolinux-neofetch-git
 arcolinux-nitrogen-git
 arcolinux-plank-git
 arcolinux-plank-themes-git
 arcolinux-qt5-git
 arcolinux-root-git
-arcolinux-slim
-arcolinux-slimlock-themes-git
-arcolinux-system-config-git
 arcolinux-termite-themes-git
-arcolinux-tweak-tool-git
 arcolinux-variety-git
-arcolinux-wallpapers-git
-arcolinux-welcome-app-git
 )
 
 count=0
@@ -89,7 +77,11 @@ for name in "${list[@]}" ; do
 	func_install $name
 done
 
-###############################################################################
+tput setaf 6;echo "################################################################"
+echo "Copying all files and folders from /etc/skel to ~"
+echo "################################################################"
+echo;tput sgr0
+cp -rT /etc/skel ~
 
 tput setaf 11;
 echo "################################################################"
