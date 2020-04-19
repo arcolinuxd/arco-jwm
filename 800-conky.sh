@@ -50,6 +50,8 @@ func_category() {
 	echo;tput sgr0
 }
 
+###############################################################################
+
 list=(
 conky-lua-archers
 arcolinux-conky-collection-git
@@ -58,7 +60,7 @@ yad
 )
 
 count=0
-func_category Arcolinux
+func_category Conky
 
 for name in "${list[@]}" ; do
 	count=$[count+1]

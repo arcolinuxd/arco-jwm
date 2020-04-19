@@ -54,7 +54,6 @@ func_category() {
 
 list=(
 mintstick-git
-conky-lua-archers
 )
 
 count=0

@@ -50,6 +50,8 @@ func_category() {
 	echo;tput sgr0
 }
 
+###############################################################################
+
 list=(
 gtk-engine-murrine
 dmenu
@@ -60,7 +62,7 @@ hardcode-fixer-git
 )
 
 count=0
-func_category Arcolinux
+func_category Additional-distro-specific
 
 for name in "${list[@]}" ; do
 	count=$[count+1]
