@@ -58,6 +58,7 @@ lxrandr
 w3m
 xfce4-notifyd
 yad
+harcode-fixer-git
 )
 
 count=0
@@ -68,6 +69,8 @@ for name in "${list[@]}" ; do
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
+
+sudo hardcode-fixer
 
 ###############################################################################
 

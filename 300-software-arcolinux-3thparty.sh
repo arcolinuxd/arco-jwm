@@ -88,7 +88,7 @@ list=(
 downgrade
 inxi
 pamac-aur
-hardcode-fixer
+hardcode-fixer-git
 )
 
 count=0
