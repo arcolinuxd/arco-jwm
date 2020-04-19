@@ -43,7 +43,7 @@ func_install() {
 }
 
 func_category() {
-	tput setaf 2;
+	tput setaf 5;
 	echo "################################################################"
 	echo "Installing software for category " $1
 	echo "################################################################"
