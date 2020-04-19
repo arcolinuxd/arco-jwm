@@ -71,6 +71,7 @@ done
 list=(
 atom
 meld
+sublime-text-dev
 )
 
 count=0
@@ -103,7 +104,6 @@ done
 
 list=(
 chromium
-firefox
 qbittorrent
 )
 
@@ -150,11 +150,8 @@ done
 ###############################################################################
 
 list=(
-arc-gtk-theme
 accountsservice
-curl
 dconf-editor
-git
 scrot
 )
 

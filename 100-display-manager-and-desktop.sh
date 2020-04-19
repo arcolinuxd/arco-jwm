@@ -50,6 +50,9 @@ jwm
 sxhkd
 xdgmenumaker
 thunar
+thunar-archive-plugin
+thunar-volman
+arcolinux-xfce-git
 arcolinux-lightdm-gtk-greeter
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-wallpapers-git

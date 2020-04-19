@@ -51,10 +51,6 @@ sublime-text-dev
 flameshot
 meld
 the_platinum_searcher-bin
-thunar
-thunar-archive-plugin
-thunar-volman
-arcolinux-xfce-git
 telegram-desktop
 discord
 simplescreenrecorder
