@@ -7,12 +7,13 @@
 # Website	:	https://www.arcolinux.com
 # Website	:	https://www.arcolinuxd.com
 # Website	:	https://www.arcolinuxb.com
+# Website	:	https://www.arcolinuxiso.com
 # Website	:	https://www.arcolinuxforum.com
-###############################################################################
+##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
-###############################################################################
+##################################################################################################################
 
 
 ###############################################################################
@@ -42,27 +43,30 @@ func_install() {
 }
 
 
-echo "Installation of the core software packages"
+echo "Installation of sound software packages"
 
 list=(
-lightdm
-jwm
-sxhkd
-xdgmenumaker
-thunar
-arcolinux-lightdm-gtk-greeter
-arcolinux-lightdm-gtk-greeter-settings
-arcolinux-wallpapers-git
-arcolinux-jwm-git
-arcolinux-jwm-dconf-git
-arcolinux-config-jwm-git
+pulseaudio 
+pulseaudio-alsa 
+pavucontrol  
+alsa-firmware 
+alsa-lib 
+alsa-plugins
+alsa-utils 
+gstreamer 
+gst-plugins-good 
+gst-plugins-bad 
+gst-plugins-base 
+gst-plugins-ugly 
+playerctl
+volumeicon 
 )
 
 count=0
 
 for name in "${list[@]}" ; do
 	count=$[count+1]
-	tput setaf 1;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
 
