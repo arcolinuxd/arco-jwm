@@ -86,9 +86,6 @@ done
 
 list=(
 gitahead
-ttf-wps-fonts
-wps-office
-wps-office-mime
 )
 
 count=0
