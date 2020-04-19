@@ -52,8 +52,7 @@ ghostscript
 gsfonts
 gutenprint
 gtk3-print-backends
-libcups 
-hplip
+libcups
 system-config-printer
 )
 
