@@ -72,7 +72,7 @@ echo "Getting the ArcoLinux Samba config"
 echo "################################################################"
 echo;tput sgr0
 
-https://raw.githubusercontent.com/arcolinux/arcolinux-system-config/master/etc/samba/smb.conf.arcolinux" -O /etc/samba/smb.conf
+sudo wget https://raw.githubusercontent.com/arcolinux/arcolinux-system-config/master/etc/samba/smb.conf.arcolinux" -O /etc/samba/smb.conf
 
 tput setaf 5;echo "################################################################"
 echo "Enabling services"
