@@ -50,7 +50,7 @@ func_category() {
 	echo;tput sgr0
 }
 
-
+###############################################################################
 
 list=(
 plank
@@ -65,6 +65,132 @@ for name in "${list[@]}" ; do
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
+
+###############################################################################
+
+list=(
+atom
+meld
+)
+
+count=0
+func_category Development
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+gimp
+inkscape
+nomacs
+)
+
+count=0
+func_category Graphics
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+chromium
+firefox
+qbittorent
+)
+
+count=0
+func_category Graphics
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+simplscreenrecorder
+vlc
+)
+
+count=0
+func_category Multimedia
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+evince
+)
+
+count=0
+func_category Office
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+arc-gtk-theme
+accountsservice
+curl
+dconf-editor
+git
+scrot
+)
+
+count=0
+func_category System
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+unace
+unrar
+zip
+unzip
+sharutils
+uudeview
+arj
+cabextract
+file-roller
+)
+
+count=0
+func_category Unpack
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
 
 tput setaf 11;
 echo "################################################################"
