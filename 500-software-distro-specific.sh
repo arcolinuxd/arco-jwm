@@ -53,12 +53,10 @@ func_category() {
 list=(
 gtk-engine-murrine
 dmenu
-imagemagick
 lxrandr 
 w3m
 xfce4-notifyd
-yad
-harcode-fixer-git
+hardcode-fixer-git
 )
 
 count=0
