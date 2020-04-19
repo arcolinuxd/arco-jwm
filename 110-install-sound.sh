@@ -43,7 +43,7 @@ func_install() {
 }
 
 
-echo "Installation of sound software packages"
+echo "Installation of sound software"
 
 list=(
 pulseaudio

@@ -42,7 +42,7 @@ func_install() {
 }
 
 
-echo "Installation of the core software packages"
+echo "Installation of the core software"
 
 list=(
 lightdm

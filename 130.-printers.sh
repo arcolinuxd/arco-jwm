@@ -43,14 +43,18 @@ func_install() {
 }
 
 
-echo "Installation of bluetooth software"
+echo "Installation of printer software"
 
 list=(
-pulseaudio-bluetooth
-bluez
-bluez-libs
-bluez-utils
-blueberry
+cups
+cups-pdf
+ghostscript
+gsfonts
+gutenprint
+gtk3-print-backends
+libcups 
+hplip
+system-config-printer
 )
 
 count=0
@@ -66,9 +70,7 @@ echo "Enabling services"
 echo "################################################################"
 echo;tput sgr0
 
-sudo systemctl enable bluetooth.service
-sudo systemctl start bluetooth.service
-sudo sed -i 's/'#AutoEnable=false'/'AutoEnable=true'/g' /etc/bluetooth/main.conf
+sudo systemctl enable org.cups.cupsd.service
 
 tput setaf 11;
 echo "################################################################"
