@@ -55,7 +55,6 @@ func_category() {
 list=(
 arcolinux-arc-themes-nico-git
 arcolinux-bin-git
-arcolinux-cron-git
 arcolinux-hblock-git
 arcolinux-kvantum-git
 arcolinux-local-xfce4-git
