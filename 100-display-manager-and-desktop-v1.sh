@@ -27,6 +27,7 @@ sudo pacman -S --noconfirm --needed arcolinux-lightdm-gtk-greeter arcolinux-ligh
 sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
 #installing desktop environment
 sudo pacman -S jwm --noconfirm --needed
+sudo pacman -S sxhkd --noconfirm --needed
 sh AUR-DS/install-xdgmenumaker-v*.sh
 #enabling displaymanager or login manager
 sudo systemctl enable lightdm.service -f
