@@ -64,12 +64,6 @@ for name in "${list[@]}" ; do
 	func_install $name
 done
 
-tput setaf 6;echo "################################################################"
-echo "Copying all files and folders from /etc/skel to ~"
-echo "################################################################"
-echo;tput sgr0
-cp -rT /etc/skel ~
-
 tput setaf 11;
 echo "################################################################"
 echo "Software has been installed"
