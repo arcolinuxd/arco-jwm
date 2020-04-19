@@ -42,37 +42,29 @@ func_install() {
     fi
 }
 
+func_category() {
+	tput setaf 2;
+	echo "################################################################"
+	echo "Installing software for category " $1
+	echo "################################################################"
+	echo;tput sgr0
+}
 
-echo "Installation of the development packages"
+
 
 list=(
-firefox
-sublime-text-dev
-flameshot
-meld
-the_platinum_searcher-bin
-thunar
-thunar-archive-plugin
-thunar-volman
-arcolinux-xfce-git
-telegram-desktop
-discord
-simplescreenrecorder
+plank
+variety
 )
 
 count=0
 
 for name in "${list[@]}" ; do
 	count=$[count+1]
+	func_category Accessories
 	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
 	func_install $name
 done
-
-tput setaf 6;echo "################################################################"
-echo "Copying all files and folders from /etc/skel to ~"
-echo "################################################################"
-echo;tput sgr0
-cp -rT /etc/skel ~
 
 tput setaf 11;
 echo "################################################################"
