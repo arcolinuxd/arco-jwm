@@ -53,23 +53,35 @@ func_category() {
 ###############################################################################
 
 list=(
-arcolinux-fonts-git
-adobe-source-sans-pro-fonts
-cantarell-fonts
-noto-fonts
-ttf-bitstream-vera
-ttf-dejavu
-ttf-droid
-ttf-hack
-ttf-inconsolata
-ttf-liberation
-ttf-roboto
-ttf-ubuntu-font-family
-tamsyn-font
+arcolinux-arc-themes-nico-git
+arcolinux-bin-git
+arcolinux-cron-git
+arcolinux-hblock-git
+arcolinux-kvantum-git
+arcolinux-lightdm-gtk-greeter
+arcolinux-lightdm-gtk-greeter-settings
+arcolinux-local-xfce4-git
+arcolinux-local-xfce4-git
+arcolinux-logout-git
+arcolinux-mirrorlist-git
+arcolinux-neofetch-git
+arcolinux-nitrogen-git
+arcolinux-plank-git
+arcolinux-plank-themes-git
+arcolinux-qt5-git
+arcolinux-root-git
+arcolinux-slim
+arcolinux-slimlock-themes-git
+arcolinux-system-config-git
+arcolinux-termite-themes-git
+arcolinux-tweak-tool-git
+arcolinux-variety-git
+arcolinux-wallpapers-git
+arcolinux-welcome-app-git
 )
 
 count=0
-func_category Fonts
+func_category Arcolinux
 
 for name in "${list[@]}" ; do
 	count=$[count+1]

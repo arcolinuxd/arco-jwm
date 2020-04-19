@@ -53,23 +53,46 @@ func_category() {
 ###############################################################################
 
 list=(
-arcolinux-fonts-git
-adobe-source-sans-pro-fonts
-cantarell-fonts
-noto-fonts
-ttf-bitstream-vera
-ttf-dejavu
-ttf-droid
-ttf-hack
-ttf-inconsolata
-ttf-liberation
-ttf-roboto
-ttf-ubuntu-font-family
-tamsyn-font
+mintstick-git
+conky-lua-archers
 )
 
 count=0
-func_category Fonts
+func_category Accessories
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+peek
+radiotray
+)
+
+count=0
+func_category Multimedia
+
+for name in "${list[@]}" ; do
+	count=$[count+1]
+	tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+	func_install $name
+done
+
+###############################################################################
+
+list=(
+gitahead
+ttf-wps-fonts
+wps-office
+wps-office-mime
+)
+
+count=0
+func_category Any_software_from_arcolinux_xlarge_repository
 
 for name in "${list[@]}" ; do
 	count=$[count+1]

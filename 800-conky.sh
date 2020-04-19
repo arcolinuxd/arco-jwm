@@ -50,26 +50,15 @@ func_category() {
 	echo;tput sgr0
 }
 
-###############################################################################
-
 list=(
-arcolinux-fonts-git
-adobe-source-sans-pro-fonts
-cantarell-fonts
-noto-fonts
-ttf-bitstream-vera
-ttf-dejavu
-ttf-droid
-ttf-hack
-ttf-inconsolata
-ttf-liberation
-ttf-roboto
-ttf-ubuntu-font-family
-tamsyn-font
+conky-lua-archers
+arcolinux-conky-collection-git
+arcolinux-pipemenus-git
+yad
 )
 
 count=0
-func_category Fonts
+func_category Arcolinux
 
 for name in "${list[@]}" ; do
 	count=$[count+1]
