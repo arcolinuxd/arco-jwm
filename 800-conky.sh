@@ -58,6 +58,7 @@ arcolinux-conky-collection-git
 arcolinux-pipemenus-git
 arcolinux-root-git
 yad
+libpulse
 )
 
 count=0
