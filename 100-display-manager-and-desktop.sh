@@ -38,7 +38,7 @@ func_install() {
     	echo "###############################################################################"
     	echo
     	tput sgr0
-    	sudo pacman -S --noconfirm --needed $1 
+    	sudo pacman -S --noconfirm --needed $1
     fi
 }
 
@@ -47,16 +47,16 @@ echo "Installation of the core software"
 
 list=(
 lightdm
-jwm
-sxhkd
-xdgmenumaker
+arcolinux-lightdm-gtk-greeter
+arcolinux-lightdm-gtk-greeter-settings
+arcolinux-wallpapers-git
 thunar
 thunar-archive-plugin
 thunar-volman
 arcolinux-xfce-git
-arcolinux-lightdm-gtk-greeter
-arcolinux-lightdm-gtk-greeter-settings
-arcolinux-wallpapers-git
+jwm
+sxhkd
+xdgmenumaker
 arcolinux-jwm-git
 arcolinux-jwm-dconf-git
 arcolinux-config-jwm-git

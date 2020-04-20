@@ -71,7 +71,6 @@ func_category Multimedia
 
 list=(
 peek
-radiotray
 )
 
 count=0
