@@ -55,7 +55,6 @@ func_category() {
 func_category Accessories
 
 list=(
-plank
 variety
 )
 
