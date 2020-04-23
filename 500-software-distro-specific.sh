@@ -58,7 +58,7 @@ list=(
 dmenu
 imagemagick
 gtk-engine-murrine
-lxappearance-gtk3
+lxappearance
 lxrandr
 w3m
 xfce4-appfinder
