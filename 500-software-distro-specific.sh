@@ -56,6 +56,7 @@ func_category Additional-distro-specific
 
 list=(
 dmenu
+imagemagick
 gtk-engine-murrine
 lxappearance-gtk3
 lxrandr
