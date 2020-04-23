@@ -63,6 +63,7 @@ xdgmenumaker
 arcolinux-jwm-git
 arcolinux-jwm-dconf-git
 arcolinux-config-jwm-git
+dmenu
 )
 
 count=0
