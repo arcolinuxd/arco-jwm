@@ -64,6 +64,7 @@ arcolinux-jwm-git
 arcolinux-jwm-dconf-git
 arcolinux-config-jwm-git
 dmenu
+arcolinux-logout-git
 )
 
 count=0
