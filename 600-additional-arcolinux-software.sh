@@ -55,6 +55,19 @@ func_category() {
 func_category Arcolinux-Desktop
 
 list=(
+thunar
+thunar-archive-plugin
+thunar-volman
+xfce4-terminal
+arcolinux-xfce-git
+arcolinux-local-xfce4-git
+sxhkd
+xdgmenumaker
+arcolinux-jwm-git
+arcolinux-jwm-dconf-git
+arcolinux-config-jwm-git
+dmenu
+arcolinux-logout-git
 )
 
 count=0

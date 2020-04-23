@@ -51,20 +51,7 @@ lightdm
 arcolinux-lightdm-gtk-greeter
 arcolinux-lightdm-gtk-greeter-settings
 arcolinux-wallpapers-git
-thunar
-thunar-archive-plugin
-thunar-volman
-xfce4-terminal
-arcolinux-xfce-git
-arcolinux-local-xfce4-git
 jwm
-sxhkd
-xdgmenumaker
-arcolinux-jwm-git
-arcolinux-jwm-dconf-git
-arcolinux-config-jwm-git
-dmenu
-arcolinux-logout-git
 )
 
 count=0
@@ -78,10 +65,10 @@ done
 ###############################################################################
 
 tput setaf 6;echo "################################################################"
-echo "Copying all files and folders from /etc/skel to ~"
+echo "Copying config file  from /etc/ to ~"
 echo "################################################################"
 echo;tput sgr0
-cp -rT /etc/skel ~
+cp -i /etc/system.jwmrc ~/.jwmrc
 
 tput setaf 5;echo "################################################################"
 echo "Enabling lightdm as display manager"
