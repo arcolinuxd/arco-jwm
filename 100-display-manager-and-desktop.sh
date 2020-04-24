@@ -53,6 +53,7 @@ arcolinux-lightdm-gtk-greeter-settings
 arcolinux-wallpapers-git
 jwm
 xterm
+feh
 )
 
 count=0
