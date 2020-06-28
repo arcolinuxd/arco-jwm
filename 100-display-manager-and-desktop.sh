@@ -68,10 +68,11 @@ done
 ###############################################################################
 
 tput setaf 6;echo "################################################################"
-echo "Copying config file  from /etc/ to ~"
+echo "Copying all files and folders from /etc/skel to ~"
 echo "################################################################"
 echo;tput sgr0
-cp -i /etc/system.jwmrc ~/.jwmrc
+cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
+cp -arf /etc/skel/. ~
 
 tput setaf 5;echo "################################################################"
 echo "Enabling lightdm as display manager"
