@@ -65,7 +65,7 @@ sxhkd
 xdgmenumaker
 arcolinux-jwm-git
 arcolinux-jwm-dconf-git
-arcolinux-config-jwm-git
+arcolinux-config-all-desktops-git
 dmenu
 )
 
