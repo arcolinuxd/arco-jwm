@@ -64,7 +64,7 @@ arcolinux-local-xfce4-git
 sxhkd
 xdgmenumaker
 arcolinux-jwm-git
-arcolinux-jwm-dconf-git
+arcolinux-dconf-all-desktops-git
 arcolinux-config-all-desktops-git
 dmenu
 )
