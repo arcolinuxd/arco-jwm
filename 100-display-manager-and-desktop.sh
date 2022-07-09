@@ -52,7 +52,7 @@ arcolinux-wallpapers-git
 jwm
 xterm
 feh
-arcolinux-logout-git
+archlinux-logout-git
 )
 
 count=0
