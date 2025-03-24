@@ -53,6 +53,7 @@ jwm
 xterm
 feh
 archlinux-logout-git
+xdgmenumaker-git
 )
 
 count=0
