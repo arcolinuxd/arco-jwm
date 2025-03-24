@@ -62,7 +62,6 @@ xfce4-terminal
 arconet-xfce
 arcolinux-local-xfce4-git
 sxhkd
-xdgmenumaker
 arcolinux-jwm-git
 arcolinux-dconf-all-desktops-git
 arcolinux-config-all-desktops-git
